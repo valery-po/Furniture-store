@@ -89,9 +89,8 @@ gulp.task('export', async function () {
   
   gulp.task('watch', function () {
      gulp.watch('app/scss/**/*.scss', gulp.parallel('sass'))
- 
      gulp.watch('app/*.html', gulp.parallel('html'))
-    gulp.watch('app/js/*.js', gulp.parallel('js'))
+     gulp.watch('app/js/*.js', gulp.parallel('js'))
   });
   
   gulp.task('build', gulp.series('clean', 'export'));
