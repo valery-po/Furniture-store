@@ -188,7 +188,7 @@
 //start categories 
 
 .categories {
-  padding-top: 100px;
+  padding-top: 110px; // 100
   position: relative;
 
   &__inner {
@@ -268,3 +268,5 @@
 .categories__inner .categories__menu-list li:hover .categories__inner-submenu.categories__submenu {
    height: 120px;
 }
+
+//finish categories
