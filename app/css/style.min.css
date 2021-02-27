@@ -374,6 +374,7 @@ img,
   border: 1px solid #202020;
   outline: none;
   font-size: 16px;
+  padding-left: 20px;
 }
 
 .header__search-form::before {

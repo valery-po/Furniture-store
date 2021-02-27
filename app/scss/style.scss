@@ -115,9 +115,7 @@
     }
   }
 
-
-
-  &__btn {
+ &__btn {
     display: flex;
     &-menu {
       margin-left: 15px; //30
@@ -135,7 +133,7 @@
     visibility: hidden;
     transition: 0.5s;
 
-    &.active {
+  &.active {
       opacity: 1;
       visibility: visible;
       transition-delay:  0.5s;
@@ -149,6 +147,7 @@
      border: 1px solid $text;
      outline: none;
      font-size: 16px;
+     padding-left: 20px;
    }
    &::before {
      content: "\e986";
@@ -160,7 +159,10 @@
      color: $text;
    }
   }
+ 
 }
+
+
 
 .close {
   height: 44px;
