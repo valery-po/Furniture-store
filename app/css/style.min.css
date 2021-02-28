@@ -638,3 +638,248 @@ img,
   color: #fff;
   background-color: transparent;
 }
+
+.sales-leaders {
+  padding: 100px 0;
+}
+
+.sales-leaders__title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sales-leaders__subtitles {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.sales-leaders__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.sales-leaders__inner {
+  padding: 30px;
+  -webkit-transition: all .03s;
+  -o-transition: all .03s;
+  transition: all .03s;
+}
+
+.sales-leaders__inner .sales-leaders__hidden {
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.sales-leaders__discount {
+  text-align: right;
+  position: relative;
+  z-index: 1;
+}
+
+.sales-leaders__discount span {
+  font-family: "Gilroy-Bold", sans-serif;
+  font-weight: 600;
+  padding-left: 10px;
+  z-index: 100;
+}
+
+.sales-leaders__discount-square {
+  position: absolute;
+  top: -18px;
+  right: 0;
+  width: 54px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: -1;
+}
+
+.sales-leaders__discount-square span:nth-child(1) {
+  width: 100%;
+  height: 100%;
+  -webkit-transform: rotate(265deg);
+      -ms-transform: rotate(265deg);
+          transform: rotate(265deg);
+  border-radius: 18% 75% 38% 40% / 11% 54% 23% 88%;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-animation: animate 6s linear infinite;
+          animation: animate 6s linear infinite;
+  background-color: #8aff8a;
+}
+
+.sales-leaders__description, .sales-leaders__price {
+  text-align: center;
+}
+
+.sales-leaders__description {
+  font-size: 20px;
+  line-height: 1.6;
+  max-width: 263px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 8px;
+}
+
+.sales-leaders__images {
+  width: 300px;
+}
+
+.sales-leaders__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sales-leaders__price--new {
+  font-family: "Gilroy-Bold", sans-serif;
+  font-weight: 600;
+  padding-right: 25px;
+}
+
+.sales-leaders__price--old {
+  text-decoration: line-through;
+}
+
+.sales-leaders__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 22px 15px 0;
+}
+
+.sales-leaders__button .botton-buy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 7px 14px 7px 0;
+  border: none;
+  border-radius: 60px;
+  background-color: rgba(237, 235, 233, 0.5);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  text-decoration: none;
+  outline: none;
+}
+
+.sales-leaders__button .botton-buy:hover {
+  background-color: tomato;
+}
+
+.sales-leaders__text {
+  font-size: 14px;
+  font-family: "Gilroy-Bold", sans-serif;
+  font-weight: 600;
+  margin-left: 28px;
+  margin-right: 10px;
+}
+
+.sales-leaders__icon {
+  border-radius: 50%;
+  position: relative;
+  margin-left: 10px;
+}
+
+.sales-leaders__icon::before {
+  font-size: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 7px;
+}
+
+.sales-leaders__inner:hover {
+  -webkit-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+          box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+.sales-leaders__inner:hover .sales-leaders__hidden {
+  opacity: 1;
+}
+
+.sales-leaders__buy {
+  font-size: 14px;
+  margin-left: 30px;
+  text-align: center;
+  color: darkgray;
+  cursor: pointer;
+  -webkit-transition: color 0.3s, border 0.3s ease-in-out;
+  -o-transition: color 0.3s, border 0.3s ease-in-out;
+  transition: color 0.3s, border 0.3s ease-in-out;
+  position: relative;
+}
+
+.sales-leaders__buy::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #dadada;
+}
+
+.sales-leaders__buy:hover {
+  color: #202020;
+}
+
+.sales-leaders__buy:hover::before {
+  background-color: #202020;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes animate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
