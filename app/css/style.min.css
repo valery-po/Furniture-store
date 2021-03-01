@@ -862,6 +862,46 @@ img,
   background-color: #202020;
 }
 
+.sales-leaders__loadMore {
+  font-size: 14px;
+  line-height: 1.715;
+  font-family: "Gilroy-Bold", sans-serif;
+  font-weight: 600;
+  max-width: 1270px;
+  width: 100%;
+  padding: 15px 0;
+  border: 1px solid #dadada;
+  text-align: center;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.sales-leaders__loadMore::after {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  margin-left: 20px;
+  font-size: 24px;
+}
+
+.sales-leaders__loadMore:hover {
+  border: 1px solid #202020;
+}
+
+#boxes .box:nth-child(n + 4) {
+  display: none;
+}
+
 @-webkit-keyframes animate {
   0% {
     -webkit-transform: rotate(0deg);

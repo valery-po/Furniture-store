@@ -33,4 +33,14 @@
 
    })
 
+   //LoadMore
+   $('#loadMore').click(function(){
+
+      $('#boxes .box:hidden').slice(0, 3).slideDown();
+       if($('#boxes .box:hidden').length === 0){
+          $('#loadMore').fadeOut('slow');
+      }
+     
+   });
+
 });

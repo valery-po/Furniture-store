@@ -576,6 +576,42 @@
    background-color: $text;
  }
 
+ &__loadMore {
+   font-size: 14px;
+   line-height: 1.715;
+   @include f600;
+   max-width: 1270px; //1440
+   width: 100%;
+   padding: 15px 0;
+   border: 1px solid $underline;
+   text-align: center;
+   margin: 0 auto;
+   align-items: center;
+   position: relative;
+   transition: all 0.3s;
+   cursor: pointer;
+ }
+
+ &__loadMore::after {
+   content: "+";
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   margin-left: 20px;
+   font-size: 24px;
+
+ }
+
+ &__loadMore:hover {
+   border: 1px solid $text;
+ }
+
+}
+
+//Колчичестсво карточек до нажатия кнопки loadMore
+
+#boxes .box:nth-child(n + 4){
+  display: none;
 }
 
 @keyframes animate {
