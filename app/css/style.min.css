@@ -923,3 +923,256 @@ img,
             transform: rotate(360deg);
   }
 }
+
+.collections {
+  padding-bottom: 150px;
+}
+
+.collections__mainTitle {
+  margin-bottom: 20px;
+}
+
+.collections__container {
+  max-width: 1340px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.collections__item {
+  max-width: 1340px;
+  width: 100%;
+  position: relative;
+}
+
+.collections__item-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.collections__item-left {
+  max-width: 770px;
+  width: 100%;
+}
+
+.collections__item-left__img {
+  min-height: 870px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.collections__item-left__info {
+  width: 480px;
+  position: absolute;
+  top: 200px;
+  left: 200px;
+}
+
+.collections__item-left__title {
+  color: #fff;
+  font-size: 60px;
+  line-height: 63.6px;
+  max-width: 246px;
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.collections__item-left__btn {
+  display: inline-block;
+  padding: 11.5px 23px;
+  font-family: "Gilroy-Bold", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.215;
+  color: #777;
+  background-color: #fff;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  -webkit-transition: all 0.1s;
+  -o-transition: all 0.1s;
+  transition: all 0.1s;
+}
+
+.collections__item-left__btn:hover {
+  background-color: transparent;
+  color: #fff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.collections__item-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 550px;
+  width: 100%;
+  -webkit-box-shadow: 20px 50px rgba(0, 0, 0, 0.1);
+          box-shadow: 20px 50px rgba(0, 0, 0, 0.1);
+  padding: 0 30px;
+}
+
+.collections__item-right__img img {
+  max-height: 600px;
+  max-width: 460px;
+  width: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 20px;
+  margin: 0 auto;
+}
+
+.collections__item-right__title {
+  font-size: 28px;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+.collections__item-right__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 22px;
+}
+
+.collections__item-right__price--new {
+  font-family: "Gilroy-Bold", sans-serif;
+  font-weight: 600;
+  margin-right: 25px;
+}
+
+.collections__item-right__price--old {
+  text-decoration: line-through;
+  color: red;
+}
+
+.collections__item-right__description {
+  margin-bottom: 16px;
+}
+
+.collections__item-right__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.collections__item-right__bottom .button-buy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 7px 14px 7px 0;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  text-decoration: none;
+  outline: none;
+}
+
+.collections__item-right__bottom .button-buy__text {
+  font-size: 14px;
+  font-family: "Gilroy-Bold", sans-serif;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.collections__item-right__bottom .button-buy__icon {
+  border-radius: 50%;
+  position: relative;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.collections__item-right__bottom .button-buy__icon::before {
+  content: "\e903";
+  font-size: 20px;
+  padding: 5px;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.collections__item-right__bottom .button-buy__icon:hover::before {
+  content: "\e9da";
+  background-color: #f3e9e2;
+  color: #202020;
+}
+
+.slick-arrow {
+  border: none;
+  width: 35px;
+  height: 52px;
+  font-size: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 2;
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+}
+
+.slick-prev {
+  font-size: 0;
+  position: absolute;
+  left: 0;
+  margin-right: 22px;
+}
+
+.slick-prev::before {
+  content: "\e900";
+  font-size: 50px;
+  font-family: 'icomoon';
+}
+
+.slick-next {
+  font-size: 0;
+  position: absolute;
+  right: 0;
+  top: 49%;
+  margin-right: 22px;
+}
+
+.slick-next::before {
+  content: "\e901";
+  font-size: 60px;
+  font-family: 'icomoon';
+}
