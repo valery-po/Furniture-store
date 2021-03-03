@@ -43,6 +43,15 @@
      
    });
 
+   $('#newItemsloadMore').click(function(){
+
+      $('#newBoxes .newBox:hidden').slice(0, 3).slideDown();
+       if($('#newBoxes .newBox:hidden').length === 0){
+          $('#newItemsloadMore').fadeOut('slow');
+      }
+     
+   });
+
    //Collections slider 
 
 
