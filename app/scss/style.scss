@@ -395,7 +395,8 @@
 
 // start sales-leader 
 
-.sales-leaders {
+.sales-leaders,
+.new-items {
   padding: 100px 0;
 
   &__title {
@@ -419,7 +420,8 @@
     padding: 30px;
     transition: all .03s;
 
-    & .sales-leaders__hidden {
+    & .sales-leaders__hidden,
+    & .new-items__hidden {
       opacity: 0;
       transition: all 0.3s;
     }
@@ -542,10 +544,11 @@
  &__inner:hover {
    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
 
-   & .sales-leaders__hidden {
+   & .sales-leaders__hidden,
+   & .new-items__hidden {
      opacity: 1;
    }
- }
+}
 
  &__buy {
    font-size: 14px;
@@ -576,7 +579,8 @@
    background-color: $text;
  }
 
- &__loadMore {
+ &__loadMore,
+ &__newItemsLoadMore {
    font-size: 14px;
    line-height: 1.715;
    @include f600;
@@ -592,7 +596,8 @@
    cursor: pointer;
  }
 
- &__loadMore::after {
+ &__loadMore::after,
+ &__newItemsLoadMore::after {
    content: "+";
    position: absolute;
    top: 50%;
@@ -602,7 +607,8 @@
 
  }
 
- &__loadMore:hover {
+ &__loadMore:hover,
+ &__newItemsLoadMore:hover {
    border: 1px solid $text;
  }
 
@@ -611,6 +617,10 @@
 //Колчичестсво карточек до нажатия кнопки loadMore
 
 #boxes .box:nth-child(n + 4){
+  display: none;
+}
+
+#newBoxes .newBox:nth-child(n + 4){
   display: none;
 }
 
@@ -626,7 +636,7 @@
 //Collections 
 
 .collections {
-  padding-bottom: 150px;
+  
 
   &__mainTitle  {
      margin-bottom: 20px;
@@ -698,12 +708,13 @@
 
   &__item-right {
     display: flex;
+    border: 1px solid #dadada;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     max-width: 550px;
     width: 100%;
-    box-shadow: 020px 50px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.1);
     padding: 0 30px;
 
     &__img img {
@@ -797,9 +808,9 @@
 }
 
 .slick-arrow {
-  border: none;
-  width: 35px;
-  height: 52px;
+   border: none;
+  // width: 35px;
+  // height: 52px;
   font-size: 0;
   position: absolute;
   top: 50%;
@@ -814,7 +825,7 @@
   font-size: 0;
   position: absolute;
   left: 0;
-  margin-right: 22px;
+  
 }
 
 .slick-prev::before {
@@ -828,11 +839,18 @@
   position: absolute;
   right: 0;
   top: 49%;
-  margin-right: 22px;
+  
 }
 
 .slick-next::before {
   content: "\e901";
-  font-size: 60px;
+  font-size: 50px;
   font-family: 'icomoon';
+}
+
+.slick-initialized .slick-slide {
+  display: block;
+  height: 870px;
+  overflow-y: hidden;
+
 }
