@@ -1213,8 +1213,136 @@ img,
   font-family: 'icomoon';
 }
 
-.slick-initialized .slick-slide {
+.collections__inner.slick-initialized .slick-slide {
   display: block;
   height: 870px;
   overflow-y: hidden;
+}
+
+.projects__title {
+  margin-bottom: 20px;
+}
+
+.projects__subtitle {
+  margin-bottom: 30px;
+}
+
+.projects__goToProjects {
+  font-size: 14px;
+  line-height: 1.715;
+  font-family: "Gilroy-Bold", sans-serif;
+  font-weight: 600;
+  -webkit-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  margin-bottom: 40px;
+}
+
+.projects__goToProjects:hover {
+  color: #777;
+}
+
+.projects__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.projects__card-inner {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.projects__card img {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  width: 630px;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.projects__card img:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.projects__card-link {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  max-width: 750px;
+  width: 100%;
+  overflow: hidden;
+  height: 0;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.projects__card-inner:hover .projects__card-link {
+  height: 100px;
+  padding: 30px 30px 20px;
+}
+
+.projects__card-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.projects__card-title {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 22px;
+}
+
+.projects__card-descr {
+  color: #777;
+  line-height: 1.75;
+}
+
+.projects__card-details {
+  font-size: 14px;
+  line-height: 1.715;
+  font-family: "Gilroy-Bold", sans-serif;
+  font-weight: 600;
+  -webkit-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.projects__card-details:hover {
+  color: red;
 }
