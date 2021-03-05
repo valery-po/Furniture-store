@@ -1346,3 +1346,87 @@ img,
 .projects__card-details:hover {
   color: red;
 }
+
+.footer__inner {
+  background-color: #edebe9;
+  padding: 100px 180px 0;
+}
+
+.footer__inner-title {
+  margin-bottom: 70px;
+}
+
+.footer__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer__item {
+  padding: 0 15px;
+}
+
+.footer__item-title {
+  font-size: 20px;
+  font-family: "Gilroy-Bold", sans-serif;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.footer__item-list li {
+  margin: 16px 0;
+}
+
+.footer__item-list li a:hover {
+  color: #777;
+}
+
+.footer__item-list li a img {
+  max-width: 114px;
+  width: 100%;
+}
+
+.footer__item-list li a .icon__payments {
+  max-width: 200px;
+  width: 100%;
+}
+
+.footer__bottom {
+  padding: 110px 0 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer__bottom-copyright {
+  font-size: 14px;
+  font-family: "Gilroy-Bold", sans-serif;
+  font-weight: 600;
+}
+
+.footer__bottom-privacy-policy, .footer__bottom-termsOfUse {
+  font-size: 14px;
+  line-height: 1.715;
+  -webkit-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  color: #777;
+  cursor: pointer;
+}
+
+.footer__bottom-privacy-policy:hover, .footer__bottom-termsOfUse:hover {
+  color: #202020;
+}
